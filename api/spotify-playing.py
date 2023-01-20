@@ -51,7 +51,7 @@ def nowPlaying():
 
     #token = refreshToken()
 
-    headers = {"Authorization": f"Bearer BQA0HJP0IDu6hEHoFVn2eA8Li1vagdWt_f1GAyPakKbTfzRWcSP5R1euCMCmdH6HuXdDLjO3Sca0_Awd_ZzoPiRy6VB6dqUo3ObPDYsH8OPkyxgRt0BgaFmL1wFC9cVon3OZdUUAmfvMGeYHAmYMG27mpqdkHhUcRvEDAx7m7tvE2X1QIIbCk7UeHppTiqhfUmpGLXHkBKQUGg"}
+    headers = {"Authorization": f"Bearer AQDn3kiRLGO-4pzlarcnYoQcsmD5dfCl6RB6_kVUwNJt7x0FJO8OsEUMorpBtFU6ItzZSqdjNbTV_Ug1HyEOnt9DhS7WnIo_fcTbclcjFsDyXJU_hHJ6a9WFRB513lLHAM8"}
 
     response = requests.get(SPOTIFY_URL_NOW_PLAYING, headers=headers)
 
