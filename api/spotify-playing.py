@@ -39,7 +39,9 @@ def refreshToken():
 
 def recentlyPlayed():
     token = refreshToken()
-    headers = {"Authorization": f"Bearer {token}"}
+    #headers = {"Authorization": f"Bearer {token}"}
+    #BQB9jBIgpbO35GhVkl9TgEIzFI7NC2vz8GjdqdOk0DPnckBpmtajkti13gFOBYfckJL-LPTCa0OyZHb5MNpdGG9eE0kGkC_sStWDsUkRHlJvyRQ8ySxUAO7tKdI4wsht--x0RAXA9AiDK_KfMFFUfSz6nraiD80XkswPUmo0SmY-98s0yPPAv4NspADngO_-XaI-g9M0
+    headers = {"Authorization": f"Bearer BQB9jBIgpbO35GhVkl9TgEIzFI7NC2vz8GjdqdOk0DPnckBpmtajkti13gFOBYfckJL-LPTCa0OyZHb5MNpdGG9eE0kGkC_sStWDsUkRHlJvyRQ8ySxUAO7tKdI4wsht--x0RAXA9AiDK_KfMFFUfSz6nraiD80XkswPUmo0SmY-98s0yPPAv4NspADngO_-XaI-g9M0"}
     response = requests.get(SPOTIFY_URL_RECENTLY_PLAY, headers=headers)
 
     if response.status_code == 204:
