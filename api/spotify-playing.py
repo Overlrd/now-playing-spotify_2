@@ -49,9 +49,9 @@ def recentlyPlayed():
 
 def nowPlaying():
 
-    token = refreshToken()
+    #token = refreshToken()
 
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"Authorization": f"Bearer BQA0HJP0IDu6hEHoFVn2eA8Li1vagdWt_f1GAyPakKbTfzRWcSP5R1euCMCmdH6HuXdDLjO3Sca0_Awd_ZzoPiRy6VB6dqUo3ObPDYsH8OPkyxgRt0BgaFmL1wFC9cVon3OZdUUAmfvMGeYHAmYMG27mpqdkHhUcRvEDAx7m7tvE2X1QIIbCk7UeHppTiqhfUmpGLXHkBKQUGg"}
 
     response = requests.get(SPOTIFY_URL_NOW_PLAYING, headers=headers)
 
