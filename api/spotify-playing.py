@@ -84,6 +84,7 @@ def makeSVG(data):
     if data == {}:
         content_bar = ""
         recent_plays = recentlyPlayed()
+        print(recent_plays)
         size_recent_play = len(recent_plays["items"])
         idx = random.randint(0, size_recent_play - 1)
         item = recent_plays["items"][idx]["track"]
